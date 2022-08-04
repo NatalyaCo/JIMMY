@@ -17,8 +17,8 @@ const Loading = () => {
         
 <Spinner
     style={{
-        width: size,
-        height: size,
+        width: 30 ,
+        height: 30 ,
         
     }}
 

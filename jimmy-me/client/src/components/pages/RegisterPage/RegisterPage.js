@@ -72,7 +72,7 @@ const postDetails = (pics) => {
       method: "post",
       body: data,
     })
-    .then((res)=> res,json())
+    .then((res)=> res.json())
     .then((data) => {
       setPic(data.url.toString());
   })
@@ -139,7 +139,7 @@ const postDetails = (pics) => {
       <Form.Label>Confirm Password</Form.Label>
       <Form.Control
       type="password"
-      value={confirmpassword}
+      value={confirmPassword}
       placeholder="Confirm Password"
       onChange={(e) => setConfirmPassword(e.target.value)}
       />

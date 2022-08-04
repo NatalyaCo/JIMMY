@@ -11,14 +11,14 @@ const LoginPage = () => {
 
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
-const [error, setError] = useState("");
+const [error, setError] = useState(false);
 const [loading, setLoading] = useState(false);
 
 
 
 const submitHandler = async (e) => {
 e.preventDefault();
-
+ 
 try  {
   const config = {
     headers: {

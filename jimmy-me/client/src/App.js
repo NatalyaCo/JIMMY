@@ -8,31 +8,33 @@ import Footer from "./components/Footer/Footer";
 import MainPage from "./components/MainPage/MainPage";
 import LandingPage from "./components/pages/LandingPage/LandingPage";
 import { BrowserRouter, Route } from "react-router-dom";
-import ReminderForm from "./components/ReminderForm/ReminderForm";
+import MyReminders from "./components/pages/MyReminders/MyReminders";
+
 import LoginPage from "./components/pages/LoginPage/LoginPage";
 import RegisterPage from "./components/pages/RegisterPage/RegisterPage";
 
 const App = () => {
-    <>
-    <Header />
+    
+     <BrowserRouter>
+     <Header />
+      <MainPage />
     <main style={{ minHeight: "90vhv" }}>
-    <MainPage />
-    <Footer />
-    </main> 
-    </>
-};
-
-
- <BrowserRouter>
-
-<div>
+    
+   
+    
     <Route path="/" component={LandingPage} exact />
     <Route path="/login" component={LoginPage} exact />
     <Route path="/register" component={RegisterPage} exact />
-    <Route path="/reminders" component={() => <ReminderForm /> } /> 
+    <Route path="/myreminders" component={() => <MyReminders /> } /> 
     
-</div>
-</BrowserRouter>
+    
+</main>
  
+ <Footer />
+     </BrowserRouter>
+
+};
+
+
 
 export default App; 
