@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'rect-bootstrap';
+import { Container } from 'react-bootstrap';
 
 const MainPage = ({title, children}) => {
   return (

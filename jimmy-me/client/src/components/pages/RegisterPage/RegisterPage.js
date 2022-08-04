@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import MainPage from '../../MainPage/MainPage';
 import { Form, Button } from "react-bootstrap";
-import ErrorMessage from "../../ErrorMessage/ErrorMessage"; 
-import Loading from "../../Loading/Loading";
+import Loading from '../../Loading';
+import ErrorMessage from '../../ErrorMessage';
+
 import "./RegisterPage.css"
 // import { Link } from "react-router-dom";
 

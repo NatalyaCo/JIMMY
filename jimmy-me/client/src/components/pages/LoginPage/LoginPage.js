@@ -1,9 +1,9 @@
+
 import axios from 'axios';
-import React from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import MainPage from '../../MainPage/MainPage';
-import Loading from "../../Loading/Loading";
-import ErrorMessage from "../../ErrorMessage/ErrorMessage"; 
+import Loading from '../../Loading';
+import ErrorMessage from '../../ErrorMessage';
 import "./LoginPage.css"; 
 // import { Link } from 'react-router-dom';
 
@@ -13,6 +13,8 @@ const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
 const [error, setError] = useState("");
 const [loading, setLoading] = useState(false);
+
+
 
 const submitHandler = async (e) => {
 e.preventDefault();
